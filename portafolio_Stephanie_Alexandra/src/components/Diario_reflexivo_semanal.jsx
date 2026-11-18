@@ -455,6 +455,22 @@ function EntryViewer({ entry, onPrev, onNext }) {
         )}
       </div>
 
+      {entry.n === 6 && (
+        <figure>
+          <iframe
+            src="https://drive.google.com/file/d/1AFl9KC3Bp28-mGtFjf_q0inkrUTfzNFT/preview"
+            title="Evidencia en video de la Jornada 6"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+            loading="lazy"
+            className="block aspect-video w-full max-w-3xl mx-auto my-6 rounded-xl overflow-hidden shadow-md border-0 bg-abyss"
+          />
+          <figcaption className="-mt-3 mb-2 text-center text-xs uppercase tracking-[0.2em] font-semibold text-muted">
+            Evidencia en video · Jornada 6
+          </figcaption>
+        </figure>
+      )}
+
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex gap-2">
           <button
